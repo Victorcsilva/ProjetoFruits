@@ -2,29 +2,22 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Main from './Components/Main';
 import {CartProvider} from "react-use-cart"
+import { Routes, Route } from "react-router-dom";
+import PgCart from './Components/PgCart';
 
 function App() {
   return (
     <div className="App"  >
       <CartProvider>
       <Navbar/>
-      <Main/>
+      <Routes>
+        <Route path="/home" element={<Main />} />
+          <Route path="/cart" element={<PgCart/>} />
+      </Routes>
       </CartProvider>
     </div>
+
   );
 }
 
 export default App;
-/* </div>  <header className="App-header">
-       //</header> <img src={logo} className="App-logo" alt="logo" />
-       // <p>
-          //Edit <code>src/App.js</code> and save to reload.
-        //</p>
-        //<a
-         // className="App-link"
-          //href="https://reactjs.org"
-          //target="_blank"
-          //rel="noopener noreferrer"
-        
-       // </a>
-  </header>*/

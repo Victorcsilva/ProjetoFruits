@@ -13,20 +13,24 @@ const Cart = () => {
     removeItem,
     emptyCart,
                     } = useCart();
-if (isEmpty) return <h1 className='text'>Carrinho de Compra</h1>
+if (isEmpty) return
+
+ 
     return (
         <VStack
+        
         divider={<StackDivider borderColor='gray.200' />}
         spacing={4}
         align='stretch'
         justifyContent={'center'} alignItems={'center'}
- >
+ >    
+
         <Box  className='text'  justifyContent={'center'} alignItems={'center'} h='890px' bg='white'>
             Carrinho de Compras({totalUniqueItems})
           {items.map((item,index)=>{
               return (
                       <tr key={index}>{item.title}
-                 <img src={item.image} style={{height:'6rem'}} borderColor={'green'} />
+                 <img src={item.image}  style={{height:'6rem'}} borderColor={'green'} />
      
                          
                      <td className='text'> Quantidade ({item.quantity})
@@ -68,8 +72,11 @@ if (isEmpty) return <h1 className='text'>Carrinho de Compra</h1>
                          borderColor='green.500'>Limpar Carrinho
         </Button>
         </Box>        
+        
  </VStack>
     )
   }
+
+  
 
 export default Cart
