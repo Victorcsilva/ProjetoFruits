@@ -66,6 +66,7 @@ if (isEmpty) return
 
           <h2>Total Items:({totalItems})</h2> 
           <h2>Valor Total:R$ {cartTotal}</h2>
+          
           <Button onClick={() => emptyCart()} 
                          size='md'
                          height='48px'

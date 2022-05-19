@@ -19,9 +19,7 @@ import morango from '../img/gif/whithe/morango.gif'
 import maca from '../img/gif/whithe/maca.gif'
 import grama from '../img/gif/grama3.png'
 import arvore from '../img/gif/arvore.gif'
-
 import {  Link as ReachLink } from 'react-router-dom';
-//import back from '../img/back/4.png'
 
 export default function Simple() {
  
@@ -84,7 +82,7 @@ export default function Simple() {
                               <MenuItem  as={ReachLink} to='/cart'>Carrinho</MenuItem>
                         </MenuList>
                  </Menu>
-          </Flex>
+              </Flex>
         </Flex>     
       </Box>
     </>

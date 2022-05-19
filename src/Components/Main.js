@@ -4,8 +4,6 @@ import CardFruit from './CardFruit';
 import data from './Fruit';
 import Cart from './Cart';
 import propaganda from '../img/gif/prop.gif'
-import carrinho from "../img/carrinho.png"
-
 
   export default function Main() {
     return (
