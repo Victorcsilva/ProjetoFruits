@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
-import { VStack,StackDivider,Box,Button} from '@chakra-ui/react'
+import { VStack,StackDivider,Box,Button,} from '@chakra-ui/react';
+import AlertModal from './ModalAlert';
 
 const Cart = () => {
     const {
@@ -17,7 +18,7 @@ if (isEmpty) return
 
  
     return (
-        <VStack
+        <VStack marginTop={100}
         
         divider={<StackDivider borderColor='gray.200' />}
         spacing={4}
@@ -29,9 +30,10 @@ if (isEmpty) return
             Carrinho de Compras({totalUniqueItems})
           {items.map((item,index)=>{
               return (
-                      <tr key={index}>{item.title}
-                 <img src={item.image}  style={{height:'6rem'}} borderColor={'green'} />
-     
+                
+                      <tr key={index}>
+                        {item.title}
+                       <img src={item.image}  style={{height:'6rem'}} borderColor={'green'} />
                          
                      <td className='text'> Quantidade ({item.quantity})
                        <Button onClick={() =>updateItemQuantity  (item.id, item.quantity -1)}
@@ -72,7 +74,7 @@ if (isEmpty) return
                          borderColor='green.500'>Limpar Carrinho
         </Button>
         </Box>        
-        
+        <AlertModal/>
  </VStack>
     )
   }

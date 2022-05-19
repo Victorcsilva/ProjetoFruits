@@ -4,16 +4,13 @@ import {
   Flex,
   Avatar,
   HStack,
-  IconButton,
   Button,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  useDisclosure,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import  Logo from '../img/gif/LOGO6.png';
 import Imglogo from '../img/gif/logomelan.gif'
 import banana from '../img/gif/whithe/banana.gif'

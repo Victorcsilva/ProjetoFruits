@@ -17,7 +17,6 @@ import carrinho from "../img/carrinho.png"
     >      
       <GridItem rowSpan={2} colSpan={1} bg='white'> 
       <Cart marginTop={190}></Cart>
-      <img src={carrinho} alt="logo" top={1000} width={'780px'}height={'1780px'}/>
       </GridItem>  
       <GridItem display={'flex'} colSpan={4} bg='white'>{data.fruitsdata.map((item,index)=>{
                 return(
