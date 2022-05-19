@@ -14,7 +14,7 @@ import propaganda from '../img/gif/prop.gif'
       gap={4}
     >      
       <GridItem rowSpan={2} colSpan={1} bg='white'> 
-      <Cart marginTop={190}></Cart>
+      <Cart></Cart>
       </GridItem>  
       <GridItem display={'flex'} colSpan={4} bg='white'>{data.fruitsdata.map((item,index)=>{
                 return(

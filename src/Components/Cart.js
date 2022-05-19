@@ -26,7 +26,8 @@ if (isEmpty) return
         justifyContent={'center'} alignItems={'center'}
  >    
 
-        <Box  className='text'  justifyContent={'center'} alignItems={'center'} h='890px' bg='white'>
+        <Box  className='text'      gap={4}
+ justifyContent={'center'} alignItems={'center'} h='890px' bg='white'>
             Carrinho de Compras({totalUniqueItems})
           {items.map((item,index)=>{
               return (

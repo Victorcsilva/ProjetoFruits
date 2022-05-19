@@ -6,7 +6,7 @@ Image,
 import {useCart} from 'react-use-cart';
 import React from 'react';
 const CardFruit = (props) =>{
-  const {addItem} = useCart ();
+const {addItem} = useCart ();
   console.log (props.price)
   return (
     <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
@@ -27,7 +27,7 @@ const CardFruit = (props) =>{
             <Box as='span' color='gray.600' fontSize='sm'></Box>
    </Box>
 
- <Button onClick={() =>addItem (props.item)}
+  <Button onClick={() =>addItem (props.item)}
       size='md'
       height='48px'
       width='200px'

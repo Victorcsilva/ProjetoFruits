@@ -1,11 +1,19 @@
 import Cart from './Cart';
+import {Box} from '@chakra-ui/react';
 import propaganda from '../img/gif/prop.gif'
-import { Box, Heading, Text, Button } from '@chakra-ui/react';
-import {  Link as ReachLink } from 'react-router-dom';
+//import { Box, Heading, Text, Button } from '@chakra-ui/react';
+//import {  Link as ReachLink } from 'react-router-dom';
+
 
   export default function Main() {
     return (
-     <><Box textAlign="center" py={10} px={6}>
+     <>
+      <Cart></Cart>
+      <Box alignItems={'center'} justifyContent={'center'}><img src={propaganda} w={'280px'}  alt="logo" position="absolute"/></Box>
+    </>
+    )
+  }
+  /*<Box textAlign="center" py={10} px={6}>
      <Heading
        display="inline-block"
        as="h2"
@@ -22,9 +30,4 @@ import {  Link as ReachLink } from 'react-router-dom';
        bgGradient="linear(to-r, teal.400, teal.500, teal.600)"
        color="white"
        variant="solid"> Fazer Compras </Button>
-      </Box>
-      <Cart></Cart>
-      <Box alignItems={'center'} justifyContent={'center'}><img src={propaganda} w={'280px'}  alt="logo" position="absolute"/></Box>
-    </>
-    )
-  }
+      </Box>}*/

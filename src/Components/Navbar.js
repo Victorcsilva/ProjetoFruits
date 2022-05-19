@@ -42,7 +42,7 @@ export default function Simple() {
                               <Box  display={'flex'}  alignItems={'center'} position='absolute' top={300} left={420}>
                                     <img src={banana} alt="logo" width={'180px'} position="absolute"/>
                               </Box>
-                              <Box  display={'flex'}  alignItems={'center'} position="absolute"right={523} top={230} >
+                              <Box  display={'flex'}  alignItems={'center'} position="absolute"right={483} top={230} >
                                     <img src={maca} alt="logo"  width={'300px'} left={100} />
                               </Box>
                               <Box  display={'flex'}  alignItems={'center'} position="absolute"left={1300} top={8} >
